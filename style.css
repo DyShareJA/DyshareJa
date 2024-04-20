@@ -1,0 +1,190 @@
+/* ! base style */
+body{font-family:'Inter',sans-serif;font-size: 16px;
+background: #d8bfd8;}
+
+a{text-decoration: none;}
+
+h1,h2,h3,h4,h5 p{color:#000; padding-bottom: 30px;}
+
+.big-text{font-size: 70px;font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+.intro-text{text-transform:uppercase;font-size: 20px;font-weight: bold;}
+
+.button{padding: 18px 28px;background: #ba55d3; color:#000;display: inline-block;border-radius: 8px;}
+
+@media (max-width: 768px) {
+  .big-text{font-size: 40px;}
+
+}
+
+/* ! Header */
+
+.header{
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 30px;
+  display: flex;
+  max-width: 1350px;
+}
+
+.logo{z-index: 1;}
+
+.menu{
+  width: 100%;
+  z-index: 0;
+}
+
+
+.menu li{display: inline-block}
+.menu li a{color: #fff;font-size:30px;font-weight:700; padding: 30px; display: block;}
+
+.menu2{display: none;}
+
+@media (max-width: 768px) {
+  .cta{display:none;}
+
+  .menu{position: absolute; top:0;right:-100%;background: black;height: 100vh;padding-top: 80px;}
+  .menu li{display:block;}
+
+  .menu--open{right:0%;}
+
+  .menu2{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+  .menu2 span{background: #fff;height: 3px;width: 100%;display: block; margin-bottom: 5px;}
+}
+
+
+/* !hero */
+.hero{
+  height: 667px;
+  display: flex; width: 100%; align-items: center;
+  background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0) 30.00%),
+  url('bg-video.png') no-repeat center center;
+  background-size: cover;
+}
+
+.hero__content{
+  width: 100%;
+  max-width: 1350px;
+  margin:0 auto;
+  padding: 30px;
+
+}
+.hero__content h1,
+.hero__content p{color:#fff}
+@media (max-width: 768px) {
+  .hero__content h1{color: #000}
+  .hero__content p {color:#dda0dd;}
+
+}
+/* !TUTTA LA PARTE DI CSS DELLA MISSION E VISION  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team{
+width: 100%;
+max-width: 1500px;
+margin:0 auto;
+padding: 30px;
+}
+.team h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.eventi{
+width: 100%;
+max-width: 1500px;
+margin:0 auto;
+padding: 30px;
+}
+
+.eventi table {
+  border-collapse: collapse;
+  border: 2px solid #ba55d3;
+}
+
+.eventi td {
+
+  border: 2px solid #ba55d3;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+};
